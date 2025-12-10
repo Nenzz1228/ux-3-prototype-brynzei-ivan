@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base typography */
+@layer base {
+  body {
+    @apply bg-stone-50 text-stone-900;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold text-stone-900 mb-4;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold text-stone-900 mb-3;
+  }
+
+  h3 {
+    @apply text-2xl font-bold text-stone-900 mb-2;
+  }
+
+  p {
+    @apply text-stone-600 leading-relaxed;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default button styles */
+button {
+  @apply transition-all duration-200;
+}
+
+/* Focus states for accessibility */
+@layer components {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2;
+  }
+
+  .card-base {
+    @apply bg-white rounded-lg shadow-sm;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .hero-text {
+    @apply text-xl md:text-2xl text-stone-600;
+  }
+}
