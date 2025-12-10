@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { MapPin, Wifi, Utensils, BedDouble, Snowflake, TreePine, Star } from 'lucide-react'
 import { Button } from './ui/Button'
 import { Card, CardContent } from './ui/Card'
-import { ImageWithFallback } from './figma/ImageWithFallback'
+import { ImageWithFallback } from './assets/ImageWithFallback'
 import { Service, ReviewItem, GalleryImage } from '../types'
 
 interface HomeProps {
